@@ -1,0 +1,19 @@
+function Ans=Tk2(x)
+%UNTITLED2 此处显示有关此函数的摘要
+%   此处显示详细说明
+       a1 =   3.412e+19  ;
+       b1 =       37.53  ;
+       c1 =       23.18  ;
+       a2 =   1.893e+06  ;
+       b2 =       123.1 ;
+       c2 =       54.06 ;
+     Ans =  a1.*exp(-((x-b1)./c1).^2) + a2.*exp(-((x-b2)./c2).^2);
+%{
+Goodness of fit:
+  SSE: 1.95e+09
+  R-square: 0.9997
+  Adjusted R-square: 0.9996
+  RMSE: 5954
+     %}
+end
+
